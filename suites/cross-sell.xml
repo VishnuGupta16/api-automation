@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cross Sell API Automation Suite">
+
+	<parameter name="basePath" value="/cross-sell/api" />
+	<parameter name="moduleName" value="cross-sell" />
+	<parameter name="resourceFileName" value="cross-sell/cross-sell.properties" />
+	<parameter name="inputFile" value="cross-sell/cross-sell-input.csv" />
+	<parameter name="expectedOutputFile" value="cross-sell/cross-sell-expected-output.csv" />
+	
+	<test name="Cross Sell Suite">
+		<packages>
+			<package name="com.zivame.api.automation.framework" />
+			<package name="com.zivame.cross.sell.api.automation.test" />
+		</packages>
+	</test>
+</suite>
